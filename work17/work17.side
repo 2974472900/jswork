@@ -1,0 +1,638 @@
+{
+  "id": "2a4199f6-bafb-46e7-8c25-81ff350b6179",
+  "version": "2.0",
+  "name": "work17",
+  "url": "http://127.0.0.1:8080",
+  "tests": [{
+    "id": "a3c85320-a01e-42f8-9c5f-ac024fbbf54f",
+    "name": "合格数据",
+    "commands": [{
+      "id": "011cd939-c573-4ad7-8761-19e3e0e473ff",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d48acd3-e962-445d-8818-b9631902b8f7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "800x600",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60acb216-dca3-433d-b605-ef161d30c5a8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'work17')]",
+      "targets": [
+        ["linkText=work17 正则表达式", "linkText"],
+        ["css=a:nth-child(42)", "css:finder"],
+        ["xpath=//a[contains(text(),'work17 正则表达式')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'work17/index.html')]", "xpath:href"],
+        ["xpath=//a[21]", "xpath:position"],
+        ["xpath=//a[contains(.,'work17 正则表达式')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8488dc1d-9c04-482e-85b5-130ce97f7dba",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "york"
+    }, {
+      "id": "d18767b3-e1c3-4108-ba0a-f24866d660d6",
+      "comment": "",
+      "command": "click",
+      "target": "name=pwd",
+      "targets": [
+        ["name=pwd", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='pwd']", "xpath:attributes"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbba21d7-c7c9-42cd-b280-a9835e164574",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .success",
+      "targets": [
+        ["css=tr:nth-child(1) > .success", "css:finder"],
+        ["xpath=//td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'用户名输入正确')]", "xpath:innerText"]
+      ],
+      "value": "用户名输入正确"
+    }, {
+      "id": "29af8baf-15b1-4020-9a2d-bf97c238259e",
+      "comment": "",
+      "command": "type",
+      "target": "name=pwd",
+      "targets": [
+        ["name=pwd", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='pwd']", "xpath:attributes"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": "yorkyork"
+    }, {
+      "id": "6969b1bf-3449-4b2b-8f06-491b4413c666",
+      "comment": "",
+      "command": "click",
+      "target": "name=repwd",
+      "targets": [
+        ["name=repwd", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='repwd']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3fb14f7-a8e1-4e6f-9a27-d4ead853fe7e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > .success",
+      "targets": [
+        ["css=tr:nth-child(2) > .success", "css:finder"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'密码输入正确')]", "xpath:innerText"]
+      ],
+      "value": "密码输入正确"
+    }, {
+      "id": "78f8a300-8aac-4078-9e8c-ed011fb0a72e",
+      "comment": "",
+      "command": "type",
+      "target": "name=repwd",
+      "targets": [
+        ["name=repwd", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='repwd']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "yorkyork"
+    }, {
+      "id": "da9ee967-357d-4734-acb0-178c48916211",
+      "comment": "",
+      "command": "click",
+      "target": "name=tel",
+      "targets": [
+        ["name=tel", "name"],
+        ["css=tr:nth-child(4) input", "css:finder"],
+        ["xpath=//input[@name='tel']", "xpath:attributes"],
+        ["xpath=//tr[4]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c56ec441-3b11-44d1-840c-a4eb1a1f96a5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(3) > .success",
+      "targets": [
+        ["css=tr:nth-child(3) > .success", "css:finder"],
+        ["xpath=//tr[3]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'两次密码输入正确')]", "xpath:innerText"]
+      ],
+      "value": "两次密码输入正确"
+    }, {
+      "id": "cde6abc4-8c0b-4b38-9fee-c4e0dabb865f",
+      "comment": "",
+      "command": "type",
+      "target": "name=tel",
+      "targets": [
+        ["name=tel", "name"],
+        ["css=tr:nth-child(4) input", "css:finder"],
+        ["xpath=//input[@name='tel']", "xpath:attributes"],
+        ["xpath=//tr[4]/td/input", "xpath:position"]
+      ],
+      "value": "13999999999"
+    }, {
+      "id": "9b610f39-5348-403e-a3a5-c07f96e67fa9",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=tr:nth-child(5) input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//tr[5]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4ffa7f6-12f0-4e75-adbc-1a37ef2d6fa0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > .success",
+      "targets": [
+        ["css=tr:nth-child(4) > .success", "css:finder"],
+        ["xpath=//tr[4]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'手机号码输入正确')]", "xpath:innerText"]
+      ],
+      "value": "手机号码输入正确"
+    }, {
+      "id": "1548a797-9d20-4f03-b5c5-523bb10affbb",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=tr:nth-child(5) input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//tr[5]/td/input", "xpath:position"]
+      ],
+      "value": "cuiyu@gdmec.cn"
+    }, {
+      "id": "979f696f-51a4-4204-83e8-2b521fb022f0",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10a2c1ac-94ae-476a-951d-780b2ddd114c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(5) > .success",
+      "targets": [
+        ["css=tr:nth-child(5) > .success", "css:finder"],
+        ["xpath=//tr[5]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'邮箱输入正确')]", "xpath:innerText"]
+      ],
+      "value": "邮箱输入正确"
+    }]
+  }, {
+    "id": "6b2577fd-4482-4268-b499-529dee14fd49",
+    "name": "不合格数据",
+    "commands": [{
+      "id": "b46db769-61cf-4e46-8198-82b64108f2dc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc7387af-da2a-42e6-8c38-262e7fb7e2e5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "800x600",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d647dff3-fb3a-45e2-8adb-b893ed1cd678",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'work17')]",
+      "targets": [
+        ["linkText=work17 正则表达式", "linkText"],
+        ["css=a:nth-child(42)", "css:finder"],
+        ["xpath=//a[contains(text(),'work17 正则表达式')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'work17/index.html')]", "xpath:href"],
+        ["xpath=//a[21]", "xpath:position"],
+        ["xpath=//a[contains(.,'work17 正则表达式')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae3bc253-7c8d-4f1a-82d8-8f6d14a7e7ba",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "6e89152a-52db-42de-bb4f-7f50ed98c7de",
+      "comment": "",
+      "command": "click",
+      "target": "name=pwd",
+      "targets": [
+        ["name=pwd", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='pwd']", "xpath:attributes"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4b295ac-5aed-4e85-af6c-2323a3c136ce",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .error",
+      "targets": [
+        ["css=tr:nth-child(1) > .error", "css:finder"],
+        ["xpath=//td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'长度4~12，英文大小写字母，请重新输入')]", "xpath:innerText"]
+      ],
+      "value": "长度4~12，英文大小写字母，请重新输入"
+    }, {
+      "id": "75ee0762-0be3-4672-8e19-532e8cce81ac",
+      "comment": "",
+      "command": "type",
+      "target": "name=pwd",
+      "targets": [
+        ["name=pwd", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='pwd']", "xpath:attributes"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "8cd63a25-40f4-466a-99ce-530b8245f39f",
+      "comment": "",
+      "command": "click",
+      "target": "name=repwd",
+      "targets": [
+        ["name=repwd", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='repwd']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98de5bf4-8eb8-4d4e-968d-8562a44cfe1f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > .error",
+      "targets": [
+        ["css=tr:nth-child(2) > .success", "css:finder"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'密码输入正确')]", "xpath:innerText"]
+      ],
+      "value": "长度6~20，大小写字母、数字或下划线，请重新输入"
+    }, {
+      "id": "02437ea7-c744-4234-83c4-319f8cc2f127",
+      "comment": "",
+      "command": "type",
+      "target": "name=repwd",
+      "targets": [
+        ["name=repwd", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='repwd']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "de73342b-e090-4a29-b505-5dd519842e45",
+      "comment": "",
+      "command": "click",
+      "target": "name=tel",
+      "targets": [
+        ["name=tel", "name"],
+        ["css=tr:nth-child(4) input", "css:finder"],
+        ["xpath=//input[@name='tel']", "xpath:attributes"],
+        ["xpath=//tr[4]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "495a6e00-53ad-4f82-adfd-cb3f14b1f67f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(3) > .error",
+      "targets": [
+        ["css=tr:nth-child(3) > .success", "css:finder"],
+        ["xpath=//tr[3]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'两次密码输入正确')]", "xpath:innerText"]
+      ],
+      "value": "两次输入的密码不一致，请重新输入"
+    }, {
+      "id": "64c43a13-eea8-49f0-a70f-a10ba81a9ce9",
+      "comment": "",
+      "command": "type",
+      "target": "name=tel",
+      "targets": [
+        ["name=tel", "name"],
+        ["css=tr:nth-child(4) input", "css:finder"],
+        ["xpath=//input[@name='tel']", "xpath:attributes"],
+        ["xpath=//tr[4]/td/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "223d0b85-4516-4046-a3b5-6fd8379af534",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=tr:nth-child(5) input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//tr[5]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8217e08-7a83-4172-b3ed-ce14f41824fd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > .error",
+      "targets": [
+        ["css=tr:nth-child(4) > .success", "css:finder"],
+        ["xpath=//tr[4]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'手机号码输入正确')]", "xpath:innerText"]
+      ],
+      "value": "13、14、15、17、18开头的11位手机号，请重新输入"
+    }, {
+      "id": "293a65bd-203e-463b-b3af-5360eb300462",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=tr:nth-child(5) input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//tr[5]/td/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "5185d7ad-b115-4994-84ba-80f427ef4ced",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7d069c3-1a77-4874-8ffd-ee92fb54861f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(5) > .error",
+      "targets": [
+        ["css=tr:nth-child(5) > .success", "css:finder"],
+        ["xpath=//tr[5]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'邮箱输入正确')]", "xpath:innerText"]
+      ],
+      "value": "用户名@域名（域名后缀至少2个字符），请重新输入"
+    }]
+  }, {
+    "id": "e2846c25-665c-46a5-84fb-2c394985e246",
+    "name": "空数据",
+    "commands": [{
+      "id": "6e8339cc-1e03-4b19-8ccc-a24319bdacb6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6714d8f-9b94-4bc5-9d53-c8221a1a13a9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "800x600",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97042ebc-97da-458f-ad41-d4383075927d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'work17')]",
+      "targets": [
+        ["linkText=work17 正则表达式", "linkText"],
+        ["css=a:nth-child(42)", "css:finder"],
+        ["xpath=//a[contains(text(),'work17 正则表达式')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'work17/index.html')]", "xpath:href"],
+        ["xpath=//a[21]", "xpath:position"],
+        ["xpath=//a[contains(.,'work17 正则表达式')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3141406-9ed0-44fe-9d5b-7613f136ea3c",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": " "
+    }, {
+      "id": "9aeef1ca-eba1-408e-8604-8d5778bf8759",
+      "comment": "",
+      "command": "click",
+      "target": "name=pwd",
+      "targets": [
+        ["name=pwd", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='pwd']", "xpath:attributes"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "864778b3-65c7-4279-a9d4-4babe933ec70",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > .error",
+      "targets": [
+        ["css=tr:nth-child(1) > .error", "css:finder"],
+        ["xpath=//td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'长度4~12，英文大小写字母，请重新输入')]", "xpath:innerText"]
+      ],
+      "value": "输入框不能为空，请重新输入"
+    }, {
+      "id": "23a25786-9281-42a6-b9a6-e352d3ed588d",
+      "comment": "",
+      "command": "type",
+      "target": "name=pwd",
+      "targets": [
+        ["name=pwd", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='pwd']", "xpath:attributes"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": " "
+    }, {
+      "id": "51c895ab-09eb-4b4c-82bb-5200f75132a9",
+      "comment": "",
+      "command": "click",
+      "target": "name=repwd",
+      "targets": [
+        ["name=repwd", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='repwd']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "834819aa-10c1-45ed-b755-d2bbc793b494",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > .error",
+      "targets": [
+        ["css=tr:nth-child(2) > .success", "css:finder"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'密码输入正确')]", "xpath:innerText"]
+      ],
+      "value": "输入框不能为空，请重新输入"
+    }, {
+      "id": "4898921b-dbb1-4d73-8100-9c00ccf2762f",
+      "comment": "",
+      "command": "type",
+      "target": "name=repwd",
+      "targets": [
+        ["name=repwd", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='repwd']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": " "
+    }, {
+      "id": "2e51d5d1-0f72-4cc7-b24f-d004a03e7b48",
+      "comment": "",
+      "command": "click",
+      "target": "name=tel",
+      "targets": [
+        ["name=tel", "name"],
+        ["css=tr:nth-child(4) input", "css:finder"],
+        ["xpath=//input[@name='tel']", "xpath:attributes"],
+        ["xpath=//tr[4]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28dfe4d8-bc17-4c33-a1c9-78466fc9578d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(3) > .error",
+      "targets": [
+        ["css=tr:nth-child(3) > .success", "css:finder"],
+        ["xpath=//tr[3]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'两次密码输入正确')]", "xpath:innerText"]
+      ],
+      "value": "输入框不能为空，请重新输入"
+    }, {
+      "id": "6d38e18d-114a-42db-9ae5-a54e2096774b",
+      "comment": "",
+      "command": "type",
+      "target": "name=tel",
+      "targets": [
+        ["name=tel", "name"],
+        ["css=tr:nth-child(4) input", "css:finder"],
+        ["xpath=//input[@name='tel']", "xpath:attributes"],
+        ["xpath=//tr[4]/td/input", "xpath:position"]
+      ],
+      "value": " "
+    }, {
+      "id": "224bc773-8438-4b30-b175-e02e6ea7baff",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=tr:nth-child(5) input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//tr[5]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e4f8cc0-7d3d-4162-9dd6-cb9fa6b41e18",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > .error",
+      "targets": [
+        ["css=tr:nth-child(4) > .success", "css:finder"],
+        ["xpath=//tr[4]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'手机号码输入正确')]", "xpath:innerText"]
+      ],
+      "value": "输入框不能为空，请重新输入"
+    }, {
+      "id": "404d0016-c135-43c2-9e06-75c7d46b7f0b",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=tr:nth-child(5) input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//tr[5]/td/input", "xpath:position"]
+      ],
+      "value": " "
+    }, {
+      "id": "f4419eed-4e6d-48b2-8be0-2751d64d9057",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51b34d79-29de-472e-bd7e-39dee9890201",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(5) > .error",
+      "targets": [
+        ["css=tr:nth-child(5) > .success", "css:finder"],
+        ["xpath=//tr[5]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'邮箱输入正确')]", "xpath:innerText"]
+      ],
+      "value": "输入框不能为空，请重新输入"
+    }]
+  }],
+  "suites": [{
+    "id": "3d1f33bd-aa1c-48ac-932b-ee0fbe1db3bd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a3c85320-a01e-42f8-9c5f-ac024fbbf54f", "e2846c25-665c-46a5-84fb-2c394985e246", "6b2577fd-4482-4268-b499-529dee14fd49"]
+  }],
+  "urls": ["http://127.0.0.1:8080/"],
+  "plugins": []
+}
