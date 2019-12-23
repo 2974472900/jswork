@@ -1,0 +1,202 @@
+{
+  "id": "8bf33cd5-145a-45b4-a68c-8ec5d1ee3976",
+  "version": "2.0",
+  "name": "work18",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "fdde3f4d-1424-48e6-b592-0d4f6cc9d276",
+    "name": "提交评论",
+    "commands": [{
+      "id": "73358ffe-994f-416c-a0b5-84c41120f5af",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62e2b658-8f87-4f32-bbaf-8d27674b83eb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "850x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42be8c48-f0d6-4490-b7ca-a2c90449c017",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=work18 ajax无刷新提交评论",
+      "targets": [
+        ["linkText=work18 ajax无刷新提交评论", "linkText"],
+        ["css=a:nth-child(44)", "css:finder"],
+        ["xpath=//a[contains(text(),'work18 ajax无刷新提交评论')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'work18/index.html')]", "xpath:href"],
+        ["xpath=//a[22]", "xpath:position"],
+        ["xpath=//a[contains(.,'work18 ajax无刷新提交评论')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c87f12c2-8f79-42a1-a84b-9acd00d6aa5e",
+      "comment": "",
+      "command": "click",
+      "target": "id=sno",
+      "targets": [
+        ["id=sno", "id"],
+        ["css=#sno", "css:finder"],
+        ["xpath=//input[@id='sno']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81313a97-05d4-4367-80dc-940d6b0e326d",
+      "comment": "",
+      "command": "type",
+      "target": "id=sno",
+      "targets": [
+        ["id=sno", "id"],
+        ["css=#sno", "css:finder"],
+        ["xpath=//input[@id='sno']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "07190988"
+    }, {
+      "id": "6b3075ff-1617-4e0c-91af-64c9968d6b78",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1658c04-943a-4ec0-94a7-99f5bf1e0111",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "York"
+    }, {
+      "id": "319dab26-1006-479d-8ab0-c5af14c19f9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(8)",
+      "targets": [
+        ["css=input:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='发表评论']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fb3a155-1ac5-4430-be36-168581f84a6e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=result",
+      "targets": [
+        ["id=result", "id"],
+        ["css=#result", "css:finder"],
+        ["xpath=//div[@id='result']", "xpath:attributes"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ad7ea60c-649c-4bb0-bef1-b30a8cf3d7ab",
+    "name": "分页查看",
+    "commands": [{
+      "id": "77ead09e-2916-450b-bd34-71784101fa4a",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ac808f8-efc8-4763-96b4-159823a9b876",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "800x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8afaa200-a230-483c-86f0-e4d62e52a3b4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'work18-1')]",
+      "targets": [
+        ["linkText=work18-1 ajax无刷新分页查看评论", "linkText"],
+        ["css=a:nth-child(46)", "css:finder"],
+        ["xpath=//a[contains(text(),'work18-1 ajax无刷新分页查看评论')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'work18/index1.html')]", "xpath:href"],
+        ["xpath=//a[23]", "xpath:position"],
+        ["xpath=//a[contains(.,'work18-1 ajax无刷新分页查看评论')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b85c219-5ccc-48d4-b485-f4dde77f7f76",
+      "comment": "",
+      "command": "click",
+      "target": "id=page_next",
+      "targets": [
+        ["id=page_next", "id"],
+        ["css=#page_next", "css:finder"],
+        ["xpath=//button[@id='page_next']", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'下一页')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab11d7d2-b205-4bce-8c25-86a6671041f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=page_next",
+      "targets": [
+        ["id=page_next", "id"],
+        ["css=#page_next", "css:finder"],
+        ["xpath=//button[@id='page_next']", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'下一页')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0dbd0372-6f1d-4efa-af19-49f0ae378182",
+      "comment": "",
+      "command": "click",
+      "target": "id=page_prev",
+      "targets": [
+        ["id=page_prev", "id"],
+        ["css=#page_prev", "css:finder"],
+        ["xpath=//button[@id='page_prev']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'上一页')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c8371d2-fa90-4378-86a1-317d1f6c4b1a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=ul:nth-child(5) > li:nth-child(2)",
+      "targets": [
+        ["css=ul:nth-child(5) > li:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='comment']/ul[5]/li[2]", "xpath:idRelative"],
+        ["xpath=//ul[5]/li[2]", "xpath:position"]
+      ],
+      "value": "我会写AJAX，太棒了10。"
+    }]
+  }],
+  "suites": [{
+    "id": "70d20959-11f6-4b96-8169-0837c9e60ebd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fdde3f4d-1424-48e6-b592-0d4f6cc9d276"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
