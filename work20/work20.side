@@ -1,0 +1,275 @@
+{
+  "id": "696a9851-c17d-46db-8848-93bd4647fbe9",
+  "version": "2.0",
+  "name": "work20",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "25a44011-b473-42c8-aef9-725cf0ffa27e",
+    "name": "折叠菜单",
+    "commands": [{
+      "id": "afd5ec5d-3237-4694-926d-903f17a1f8f3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e1e85b5-dc17-4227-bebd-ed1c358a577f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "600x600",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed606462-eccd-4003-b9da-bac17a48682a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'work20')]",
+      "targets": [
+        ["linkText=work20 折叠菜单", "linkText"],
+        ["css=a:nth-child(52)", "css:finder"],
+        ["xpath=//a[contains(text(),'work20 折叠菜单')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'work20/index.html')]", "xpath:href"],
+        ["xpath=//a[26]", "xpath:position"],
+        ["xpath=//a[contains(.,'work20 折叠菜单')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69eda7a1-a539-4ee5-aca7-bfcbdb25f1bd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(1) li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1) li:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='fold']/ul/li/ul/li", "xpath:idRelative"],
+        ["xpath=//li/ul/li", "xpath:position"]
+      ],
+      "value": "未读信息"
+    }, {
+      "id": "488081a7-5dbd-4103-bc36-a8ef65fff7b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=商品管理",
+      "targets": [
+        ["linkText=商品管理", "linkText"],
+        ["css=ul:nth-child(1) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'商品管理')]", "xpath:link"],
+        ["xpath=//div[@id='fold']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'商品管理')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b288b53e-9757-46a2-85b7-547ddaef0e4b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(2) li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2) li:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='fold']/ul/li[2]/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]/ul/li[2]", "xpath:position"]
+      ],
+      "value": "商品列表"
+    }, {
+      "id": "7be5ae1d-c342-4f0f-aecb-4a8e909f2e50",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=用户管理",
+      "targets": [
+        ["linkText=用户管理", "linkText"],
+        ["css=ul:nth-child(1) > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'用户管理')]", "xpath:link"],
+        ["xpath=//div[@id='fold']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[9]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'用户管理')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f932dde9-2886-4cb6-be05-ceb81ff825c8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(3) li:nth-child(3)",
+      "targets": [
+        ["css=li:nth-child(3) li:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='fold']/ul/li[3]/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//li[3]/ul/li[3]", "xpath:position"]
+      ],
+      "value": "重置密码"
+    }, {
+      "id": "42970bd0-c121-43b2-a21d-50335d7904cb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=信息管理",
+      "targets": [
+        ["linkText=信息管理", "linkText"],
+        ["css=ul:nth-child(1) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'信息管理')]", "xpath:link"],
+        ["xpath=//div[@id='fold']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'信息管理')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8217796f-916c-46fc-b976-369bc3f8d3e2",
+    "name": "选项移动",
+    "commands": [{
+      "id": "42160f56-48dc-438c-a683-6184ce48defb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6020226-007f-4570-8425-733cf8b1e6da",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "600x600",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ddf183be-4c35-4820-ac3e-b18f9dc6eac2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'work20-1')]",
+      "targets": [
+        ["linkText=work20 折叠菜单", "linkText"],
+        ["css=a:nth-child(52)", "css:finder"],
+        ["xpath=//a[contains(text(),'work20 折叠菜单')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'work20/index.html')]", "xpath:href"],
+        ["xpath=//a[26]", "xpath:position"],
+        ["xpath=//a[contains(.,'work20 折叠菜单')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "759cce76-4fde-4dd2-a36f-0ed1fdf9322a",
+      "comment": "",
+      "command": "addSelection",
+      "target": "css=#left > select",
+      "targets": [
+        ["css=#left > select", "css:finder"],
+        ["xpath=//div[@id='left']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "label=添加"
+    }, {
+      "id": "c2083590-8e2c-4900-bb9a-f68a832fd6d3",
+      "comment": "",
+      "command": "click",
+      "target": "id=toRight",
+      "targets": [
+        ["id=toRight", "id"],
+        ["css=#toRight", "css:finder"],
+        ["xpath=//input[@id='toRight']", "xpath:attributes"],
+        ["xpath=//div[@id='opt']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53dc36d4-28f2-4d34-af9f-102018a6c001",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "css=#right > select",
+      "targets": [],
+      "value": "添加"
+    }, {
+      "id": "2f6bcd7f-2797-4328-a37f-aa6bcbfd4278",
+      "comment": "",
+      "command": "click",
+      "target": "id=toAllRight",
+      "targets": [
+        ["id=toAllRight", "id"],
+        ["css=#toAllRight", "css:finder"],
+        ["xpath=//input[@id='toAllRight']", "xpath:attributes"],
+        ["xpath=//div[@id='opt']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd5c225c-52a1-4d42-89d3-7df26dac5d9c",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "css=#right > select",
+      "targets": [
+        ["css=#right > select", "css:finder"],
+        ["xpath=//div[@id='right']/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": "label=添加"
+    }, {
+      "id": "aaeec75a-501c-4307-8ee7-2cdfff9da286",
+      "comment": "",
+      "command": "addSelection",
+      "target": "css=#right > select",
+      "targets": [
+        ["css=#right > select", "css:finder"],
+        ["xpath=//div[@id='right']/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": "label=删除"
+    }, {
+      "id": "7eb86998-4045-47f5-93cc-c18d493a1c31",
+      "comment": "",
+      "command": "click",
+      "target": "id=toLeft",
+      "targets": [
+        ["id=toLeft", "id"],
+        ["css=#toLeft", "css:finder"],
+        ["xpath=//input[@id='toLeft']", "xpath:attributes"],
+        ["xpath=//div[@id='opt']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7954d96c-5740-4d17-9c23-457797bb54cf",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "css=#left > select",
+      "targets": [
+        ["css=#left > select", "css:finder"],
+        ["xpath=//div[@id='left']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'删除')]", "xpath:innerText"]
+      ],
+      "value": "删除"
+    }, {
+      "id": "aa99b53b-4a00-4ff3-b466-8d05794edc35",
+      "comment": "",
+      "command": "click",
+      "target": "id=toAllLeft",
+      "targets": [
+        ["id=toAllLeft", "id"],
+        ["css=#toAllLeft", "css:finder"],
+        ["xpath=//input[@id='toAllLeft']", "xpath:attributes"],
+        ["xpath=//div[@id='opt']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c1c5be5-4cc6-4cd3-8bea-6abbd59366d5",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "css=#left > select",
+      "targets": [
+        ["css=#left > select", "css:finder"],
+        ["xpath=//div[@id='left']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'删除')]", "xpath:innerText"]
+      ],
+      "value": "删除"
+    }]
+  }],
+  "suites": [{
+    "id": "44c4cf05-e73e-4af4-87ca-dde332caae2a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["25a44011-b473-42c8-aef9-725cf0ffa27e"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
